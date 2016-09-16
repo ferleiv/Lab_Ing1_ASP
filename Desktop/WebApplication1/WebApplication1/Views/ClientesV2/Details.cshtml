@@ -1,0 +1,95 @@
+﻿@model WebApplication1.Models.ModeloIntermedio
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCliente.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modeloCliente.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCliente.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modeloCliente.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCliente.Apellido1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modeloCliente.Apellido1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCliente.Apellido2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modeloCliente.Apellido2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCliente.Correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modeloCliente.Correo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCliente.Direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modeloCliente.Direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloTelefono1.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modeloTelefono1.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloTelefono2.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modeloTelefono2.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCuenta1.Cuenta1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modeloCuenta1.Cuenta1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCuenta2.Cuenta1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modeloCuenta2.Cuenta1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modeloCuenta3.Cuenta1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modeloCuenta3.Cuenta1)
+        </dd>
+        
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
